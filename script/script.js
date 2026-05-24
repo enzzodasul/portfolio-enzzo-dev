@@ -11,6 +11,11 @@ window.onscroll = function() {
 }
 const slides = document.querySelectorAll('.carousel-bg img');
 
+if(slides.length === 0){
+
+    console.log('Nenhuma imagem encontrada');
+}
+
 const heroText = document.querySelector('.hero-text');
 
 let current = 0;
@@ -21,32 +26,16 @@ const totalLoopTime = 35000;
 /* 3 IMAGENS */
 const slideTime = totalLoopTime / slides.length;
 
+
 function updateSlides(){
 
     slides.forEach(slide => {
+
         slide.classList.remove('active');
+
     });
 
     slides[current].classList.add('active');
-
-    /* TEXTO SOMENTE NO PRIMEIRO SLIDE */
-
-   if(current === 0){
-
-    heroText.style.opacity = '0';
-
-    /* TEXTO APARECE NO FINAL DO PRIMEIRO SLIDE */
-
-    setTimeout(() => {
-
-        heroText.style.opacity = '1';
-
-    }, slideTime - 4000);
-
-}else{
-
-    heroText.style.opacity = '0';
-}
 }
 
 /* TROCAR SLIDE */
@@ -73,3 +62,19 @@ function nextSlide(){
 updateSlides();
 
 setInterval(nextSlide, slideTime);
+
+/* =========================================================
+   LOADING SCREEN
+========================================================= */
+
+window.addEventListener('load', () => {
+
+    const loader = document.getElementById('loader');
+
+    setTimeout(() => {
+
+        loader.classList.add('hidden');
+
+    }, 3200);
+
+});
