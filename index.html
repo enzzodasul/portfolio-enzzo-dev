@@ -23,12 +23,12 @@
 
   <body>
 
-    <div
+    
     <!-----------------INICIO NAV-------------------------------->
-
+<nav>
     <div class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container"
-      <a class="navbar-brand" href="#">Enzzo</a>
+        <div class="container">
+      <a class="navbar-brand" href="#">Enzzo    (Desenvolvedor web) </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -56,11 +56,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#projetos">Projetos</a>
+            <a class="nav-link" href="#portfolio">Projetos</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#home">Contato</a>
+            <a class="nav-link" href="#contact">Contato</a>
           </li>
         </ul>
       </div>
@@ -72,17 +72,18 @@
     <!-------------------------FINAL NAV-------------------------->
     <!---------------------INICIO OLÁ SOU ENZZO ------------------ -->
     <section class="bgimage" id="home">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Olá, eu sou o Enzzo</h2>
-            <p class="hero_desc">
-              Sou um desenvolvedor Fullstack de Juiz de Fora - MG
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
+    
+
+    <div class="hero-text active-text">
+    <h2 class="hero_title">Olá, eu sou o Enzzo</h2>
+
+    <p class="hero_desc">
+        Desenvolvedor Fullstack • UI/UX • Sistemas modernos
+    </p>
+</div>
+
+</section>
     <!--------------------------FINAL SOU ENZZO--------------------->
 
     <!-------------------INICIO ABOUT SOBRE MIM---------------------->
@@ -91,9 +92,55 @@
       <div class="container mt-4 pt-4">
         <h1 class="text-center">Sobre mim</h1>
         <div class="row mt-4">
-          <div class="col-lg-4">
-            <img src="images/about.png" class="imageAboutPage" alt="" />
-          </div>
+        
+<div class="col-lg-4">
+
+    <div class="about3dContainer">
+
+        <!-- FOTO PRINCIPAL -->
+
+        <div class="mainProfileCard">
+
+            <img
+            src="images/about.png"
+            class="imageAboutPage"
+            alt="Enzzo">
+
+        </div>
+
+        <!-- VIDEO 1 -->
+
+        <div class="floatingVideo videoLeft">
+
+            <video autoplay muted loop playsinline>
+
+                <source
+                src="videos/videotimelapsedev1.mp4"
+                type="video/mp4">
+
+            </video>
+
+        </div>
+
+        <!-- VIDEO 2 -->
+
+        <div class="floatingVideo videoRight">
+
+            <video autoplay muted loop playsinline>
+
+                <source
+                src="videos/videotimelapsedev2.mp4"
+                type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </div>
+
+</div>
+
+
           <div class="col-lg-8">
             <p>
               Sou Enzzo, desenvolvedor Full Stack em formação e
@@ -151,20 +198,20 @@
 <!------------------------------------------------------------------------------->
 <!--------------------INICIO SERVIÇOS---------------------------->
 
-<section id="servces">
+<section id="services">
     <div class="container">
         <h1 class="text-center">Serviços</h1>
 
 
-        <div class="row">  <!-- PRIMEIRO LINHA container da linha contendo cards-->
+       <div class="row">  <!-- PRIMEIRO LINHA container da linha contendo cards-->
 
 
 
             <div class="col-lg-4 mt-4">  <!--inicio card 1 serviços-->
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="bi bi-back"></i> <!--ICONE DO CARD -->-->
-                        <h4>Frontend Developer</h4>
+                        <i class="bi bi-code-slash servicesIcon"></i> <!--ICONE DO CARD -->
+                        <h4 class="serviceTitle">Frontend Desenvolvedor</h4>
                         <p class="card-text mt-3">Desenvolvimento Front-End é a criação da interface visual de sites e aplicações web, focando em design, responsividade, interatividade e experiência do usuário utilizando tecnologias como HTML, CSS, JavaScript e frameworks modernos.
 
                         </p>
@@ -176,7 +223,7 @@
             <div class="col-lg-4 mt-4">  <!--inicio card 2 serviços-->
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="bi bi-award-fill"></i> <!--ICONE DO CARD -->
+                        <i class="bi bi-hdd-stack-fill servicesIcon"></i> <!--ICONE DO CARD -->
                         <h4>Backend Developer</h4> 
                         <p class="card-text mt-3">Desenvolvimento Back-End é o serviço responsável pela estrutura e funcionamento interno de sistemas e aplicações web, incluindo banco de dados, APIs, autenticação, segurança e processamento das informações que fazem o site ou aplicativo funcionar corretamente.
 
@@ -190,8 +237,8 @@
             <div class="col-lg-4 mt-4">  <!--inicio card 3 serviços-->
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="bi bi-palette2"></i> <!--ICONE DO CARD -->-->
-                        <h4>Web design</h4>
+                        <i class="bi bi-palette-fill servicesIcon"></i> <!--ICONE DO CARD -->
+                        <h4 class="serviceTitle">Web design</h4>
                         <p class="card-text mt-3">Web Design é o serviço focado na criação da aparência visual e experiência de navegação de sites, desenvolvendo layouts modernos, Personalizados com Identidade caracteristica da marca representada e intuitivos para transmitir profissionalismo, identidade visual e melhor experiência ao usuário.
 
                         </p>
@@ -222,8 +269,8 @@
 <!------------------------------------------------------------------------------------------>
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="bi bi-rocket-takeoff-fill"></i> <!--ICONE DO CARD -->-->
-                        <h4>Marketing</h4>
+                        <i class="bi bi-megaphone-fill servicesIcon"></i> <!--ICONE DO CARD -->
+                        <h4 class="serviceTitle" >Marketing</h4>
                         <p class="card-text mt-3">Marketing Digital é o serviço responsável por fortalecer a presença online de marcas e empresas através de estratégias de conteúdo, redes sociais, anúncios, identidade visual e posicionamento digital, aumentando alcance, engajamento e geração de clientes.
 
                         </p>
@@ -235,8 +282,8 @@
             <div class="col-lg-4 mt-4">  <!--inicio card 5 serviços-->
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="bi bi-ui-checks"></i> <!--ICONE DO CARD -->
-                        <h4>Consultoria</h4> 
+                        <i class="bi bi-bar-chart-line-fill servicesIcon"></i> <!--ICONE DO CARD -->
+                        <h4 class="serviceTitle" >Consultoria</h4> 
                         <p class="card-text mt-3">Serviço especializado em análise, orientação e melhoria de projetos digitais, auxiliando na escolha de tecnologias, estrutura de sistemas, performance e boas práticas de desenvolvimento. O objetivo é identificar problemas, propor soluções eficientes e guiar a evolução técnica de aplicações web com foco em qualidade, escalabilidade e resultados.
                         </p>
                     </div>
@@ -247,8 +294,8 @@
             <div class="col-lg-4 mt-4">  <!--inicio card 3 serviços-->
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="bi bi-joystick"></i> <!--ICONE DO CARD -->-->
-                        <h4>Game Development</h4>
+                        <i class="bi bi-controller servicesIcon"></i> <!--ICONE DO CARD -->
+                        <h4 class="serviceTitle" >Game Development</h4>
                         <p class="card-text mt-3">Serviço voltado ao desenvolvimento de jogos digitais, envolvendo a criação de mecânicas, lógica de gameplay, sistemas interativos e experiências imersivas. O processo inclui planejamento, programação e implementação de funcionalidades, com foco em desempenho, jogabilidade e qualidade da experiência do usuário em diferentes plataformas.
 
                         </p>
@@ -267,6 +314,8 @@
 
 
         </div>
+    </div>
+</section>
     </div>
 </section>
 
@@ -511,7 +560,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://github.com/enzzodasul/netflix"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -561,7 +610,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://github.com/enzzodasul?tab=repositories"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -673,7 +722,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://enzzodasul.github.io/twitter/"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -742,7 +791,7 @@
                     <div class="card-body d-flex flex-column">
 
                         <h4 class="card-title">
-                            Clone Netflix
+                            Home shopfy ecomerce
                         </h4>
 
                         <p class="card-text">
@@ -765,7 +814,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://github.com/enzzodasul/Paagina-de-vendas"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -818,7 +867,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://github.com/enzzodasul?tab=repositories"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -920,7 +969,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://enzzodasul.github.io/TikTok-recriado/"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -1011,7 +1060,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://github.com/enzzodasul"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -1065,7 +1114,7 @@
                         <div class="mt-auto text-center">
 
                             <a
-                            href="#"
+                            href="https://enzzodasul.github.io/Game-Flappy-Bird-1.0/"
                             class="btn btn-success">
 
                                 Ver Projeto
@@ -1098,44 +1147,46 @@
 
 
 
-<!--------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------->
-<!-------------------------------CONTATO -------------MAPA--------------------->
-<!--------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------->
-<section id="contact">
-    <div class="container mt-3 cpntactContent">
-        <h1 class="text-center">Contato</h1>
-        <div class="row mt-4">
-           <div class="col-lg-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118602.28761902434!2d-43.38252099999999!3d-21.7290588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1779603374138!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<!---------------------------------------------------------------------------> <!---------------------------------------------------------------------------> <!------------------------------- CONTATO -----------------------------------> <!---------------------------------------------------------------------------> <!---------------------------------------------------------------------------> <section id="contact">
+     <div class="container mt-3 contactContent">
+         <h1 class="text-center">Vamos criar algo incrível juntos.</h1>
+          <p class="text-center contactSubtitle"> Entre em contato para desenvolver seu projeto, tirar dúvidas ou solicitar um orçamento personalizado. </p>
+           <div class="row mt-5"> <!-- MAPA --> 
+            <div class="col-lg-6 mb-4"> 
+                <div class="mapWrapper"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118602.28761902434!2d-43.38252099999999!3d-21.7290588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1779603374138!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                 </div>
+                 </div> <!-- FORMULÁRIO --> 
+                 <div class="col-lg-6"> 
+                    <div class="contactCard"> 
+                        <form action="https://formsubmit.co/enzzodasul@gmail.com" method="POST"> <!-- CONFIG --> 
+                            <input type="hidden" name="_captcha" value="false"> 
+                            <input type="hidden" name="_subject" value="Novo contato do Portfolio"> <!-- NOME --> 
+                            <input type="text" name="nome" class="form-control form-control-lg" placeholder="Seu nome" required> <!-- EMAIL --> 
+                            <input type="email" name="email" class="form-control mt-3" placeholder="Seu e-mail" required> 
+                            <!-- TELEFONE -->
 
+                            <input
+                            type="tel"
+                            name="telefone"
+                            class="form-control mt-3"
+                            placeholder="+55 (32) 99999-9999"
+                            required>
+                            
+                            <!-- ASSUNTO --> 
+                            <input type="text" name="assunto" class="form-control mt-3" placeholder="Assunto" required> <!-- MENSAGEM --> 
+                            <div class="mb-3 mt-3"> 
+                                <textarea class="form-control" rows="6" name="mensagem" placeholder="Descreva a ideia do seu projeto" required></textarea> 
+                            </div> <!-- BOTÃO --> 
+                            <button type="submit" class="btn btn-success btn-lg mt-3 w-100 contactBtn"> Enviar mensagem 
 
-
-
-
-           <div class="col-lg-6">
-                <!-- form fields -->
-                <form>
-                    <input type="text" class="form-control form-control-lg" placeholder="Nome">
-                    <input type="email" class="form-control mt-3" placeholder="E-mail">
-                    <input type="text" class="form-control mt-3" placeholder="Assunto">
-                    <div class="mb-3 mt-3">
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Descreva a ideia do seu projeto"></textarea>
-                    </div>
-                </form>
-                <button type="button" class="btn btn-primary btn-lg mt-3">Entrar em contato</button>
-               
-            </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-</section>
+                            </button>
+                         </form>
+                         </div>
+                         </div>
+                         </div>
+                         </div>
+                         </section>
 
 <footer id="footer" >
     <div class="container-fluid">

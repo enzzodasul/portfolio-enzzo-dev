@@ -9,3 +9,67 @@ window.onscroll = function() {
         header.classList.remove('navbarDark')
     }
 }
+const slides = document.querySelectorAll('.carousel-bg img');
+
+const heroText = document.querySelector('.hero-text');
+
+let current = 0;
+
+/* TEMPO TOTAL DO LOOP */
+const totalLoopTime = 35000;
+
+/* 3 IMAGENS */
+const slideTime = totalLoopTime / slides.length;
+
+function updateSlides(){
+
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+
+    slides[current].classList.add('active');
+
+    /* TEXTO SOMENTE NO PRIMEIRO SLIDE */
+
+   if(current === 0){
+
+    heroText.style.opacity = '0';
+
+    /* TEXTO APARECE NO FINAL DO PRIMEIRO SLIDE */
+
+    setTimeout(() => {
+
+        heroText.style.opacity = '1';
+
+    }, slideTime - 4000);
+
+}else{
+
+    heroText.style.opacity = '0';
+}
+}
+
+/* TROCAR SLIDE */
+
+function nextSlide(){
+
+    
+
+    setTimeout(() => {
+
+        current++;
+
+        if(current >= slides.length){
+            current = 0;
+        }
+
+        updateSlides();
+
+    }, 800);
+}
+
+/* START */
+
+updateSlides();
+
+setInterval(nextSlide, slideTime);
